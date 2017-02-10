@@ -1,1 +1,4 @@
 <h2>signup</h2>
+<form ng-submit="{{$ctrl.postContact()}}" action="index.html" method="post">
+  <input type="email" name="{{$ctrl.signup.email}}" ng-model="{{$ctrl.email}}">
+</form>

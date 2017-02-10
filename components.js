@@ -1,24 +1,40 @@
-const fn = require('./definitions');
 (function() {
   angular.module('app', [])
   .component('giphy', {
-    controller: fn.giphy(),
+    controller: giphy,
     templateUrl: './templates/giphy.html'
   })
   .component('signup', {
-    controller: fn.signup(),
+    controller: signup,
     templateUrl: './templates/signup.html'
   })
   .component('ad', {
-    controller: fn.ad(),
+    controller: ad,
     templateUrl: './templates/ad.html'
   })
   .component('products', {
-    controller: fn.products(),
+    controller: products,
     templateUrl: './templates/products.html'
   })
   .component('adele', {
-    controller: fn.adele(),
+    controller: adele,
     templateUrl: './templates/adele.html'
   })
+
+  function ad(){
+console.log('hi ad')
+  }
+  function giphy(){
+console.log('hi giphy')
+  }
+  function adele(){
+console.log('hi adele')
+  }
+  function products(){
+console.log('hi products')
+  }
+  function signup(){
+console.log('hi signup')
+  }
+
 })();
