@@ -3,7 +3,13 @@
   margin-right: auto;
   margin-left: auto;
 }
-
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+}
 body { padding-top: 70px; }
 
 body {
