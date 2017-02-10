@@ -1,0 +1,18 @@
+{
+  "name": "i_accidentally_the_whole_thing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jeffdiers/i_accidentally_the_whole_thing.git",
+  "author": "jeffdiers <jeff.diers@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "dependencies": {
+    "angular": "1.6.0",
+    "bootstrap": "^3.3.7"
+  }
+}
