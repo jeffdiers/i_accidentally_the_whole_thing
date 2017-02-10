@@ -1,1 +1,17 @@
-<h2>giphy</h2>
+<h2>i accidently search</h2>
+<div class="row">
+<div class="col-md-3">
+<form name="gif" ng-submit="$ctrl.findGif()" novalidate>
+  <div>
+    <input type="text" id="title" class="form-control" ng-model="$ctrl.gif.title" required>
+  </div>
+    <button type="submit" class="btn btn-primary">
+      whatever
+    </button>
+</form>
+</div>
+</div>
+<div class="row">
+<br>
+  <img ng-animate="'animate'" ng-repeat="gif in $ctrl.gifphys" width="33%" ng-src="{{gif.images.downsized_medium.url}}">
+</div>

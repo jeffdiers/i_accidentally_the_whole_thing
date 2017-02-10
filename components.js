@@ -8,6 +8,10 @@
             controller: signup,
             templateUrl: './templates/signup.html'
         })
+        .component('headerNav', {
+            controller: headerNav,
+            templateUrl: './templates/headerNav.html'
+        })
         .component('products', {
             controller: products,
             templateUrl: './templates/products.html'
@@ -17,14 +21,31 @@
             templateUrl: './templates/adele.html'
         })
 
-    function ad() {
+    function headerNav() {
         const vm = this;
         console.log('ad', vm);
     }
 
-    function giphy() {
-        const vm = this;
-        console.log('giphy', vm);
+    giphy.$inject = ['$http']
+    function giphy($http){
+      const vm = this
+
+      vm.$onInit = onInit
+      vm.findGif = findGif
+
+      function onInit() {
+        $http.get(`http://api.giphy.com/v1/gifs/search?q=programing&api_key=dc6zaTOxFJmzC`).then(function (res) {
+          console.log(res.data);
+        })
+      }
+
+      function findGif() {
+        console.log("it works");
+        $http.get(`http://api.giphy.com/v1/gifs/search?q=${vm.gif.title}&api_key=dc6zaTOxFJmzC`).then(function (res) {
+          console.log(res.data.data);
+          vm.gifphys = res.data.data
+        })
+      }
     }
 
     function adele() {
