@@ -3,7 +3,7 @@
     <h3>Caution This Action Cannnot Be Undone</h3>
     <div>or unseen...</div>
 </div>
-<section ng-if="$ctrl.cycleNumber" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;">
+<section ng-if="$ctrl.cycleNumber" style="z-index: 10000; position: fixed; top: 0; left: 0; right: 0; bottom: 0;">
     <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 1" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://digitalspyuk.cdnds.net/16/03/640x360/gallery-1453286356-ezgifcom-resize-3.gif);"></div>
     <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 2" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://a.pix.ge:81/f/7tof0.gif);"></div>
     <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 3" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(https://s-media-cache-ak0.pinimg.com/originals/cb/23/aa/cb23aac8025ca14ba2033b9f4f627956.gif);"></div>
