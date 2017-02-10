@@ -50,7 +50,15 @@
 
     function adele() {
         const vm = this;
-        console.log('adele', vm);
+        vm.$onInit = () => {
+          vm.cycleNumber = false;
+        }
+        vm.adeleThis = () => {
+          vm.cycleNumber = 6;
+        }
+        vm.cycle = () => {
+          vm.cycleNumber = Math.ceil(Math.random() * 10);
+        }
     }
 
     function products() {

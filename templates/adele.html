@@ -1,1 +1,17 @@
-
+<div ng-if="!$ctrl.cycleNumber">
+    <button type="button" ng-click="$ctrl.adeleThis()" class="btn btn-danger">Accidentally Adele This Whole Page</button>
+    <h3>Caution This Action Cannnot Be Undone</h3>
+    <div>or unseen...</div>
+</div>
+<section ng-if="$ctrl.cycleNumber" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;">
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 1" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://digitalspyuk.cdnds.net/16/03/640x360/gallery-1453286356-ezgifcom-resize-3.gif);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 2" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://a.pix.ge:81/f/7tof0.gif);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 3" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(https://s-media-cache-ak0.pinimg.com/originals/cb/23/aa/cb23aac8025ca14ba2033b9f4f627956.gif);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 4" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://49.media.tumblr.com/tumblr_lsv4udFIkk1r3vbd2o1_400.gif);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 5" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://media.thedailytouch.com/2015/11/fire.gif);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 6" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://ell.h-cdn.co/assets/16/02/1452778072-0069f64313724c3dbef7553b0eb3d332.gif);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 7" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://49.media.tumblr.com/16d0765e5e50ef6289ee8c5481cb974a/tumblr_o2mir6izGo1rzstoto1_500.gif);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 8" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(https://media.tenor.co/images/07bc0100ee5dc446f5cf19da03a2dceb/raw);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 9" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(http://umad.com/img/2016/6/adele-performing-gif-18223-18772-hd-wallpapers.jpg);"></div>
+    <div ng-click="$ctrl.cycle()" ng-if="$ctrl.cycleNumber == 10" style="color: red; background-size: cover; border: none; margin: 0; padding: 0; width: 100vw; display: inline-block; height: 100vh; background-image: url(https://media.giphy.com/media/Fc6B9qR9bIZri/giphy.gif);"></div>
+</section>
