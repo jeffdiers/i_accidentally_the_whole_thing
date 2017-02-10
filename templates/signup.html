@@ -1,4 +1,6 @@
 <h2>signup</h2>
-<form ng-submit="{{$ctrl.postContact()}}" action="index.html" method="post">
-  <input type="email" name="{{$ctrl.signup.email}}" ng-model="{{$ctrl.email}}">
+<form ng-if="!$ctrl.thanks" ng-submit="$ctrl.postContact()">
+    <input type="email" name="$ctrl.signup.email" ng-model="$ctrl.email">
+    <button type="submit">Get Our Newsletter!</button>
 </form>
+<p ng-if="$ctrl.thanks">Thanks! We'll Be In Touch</p>
